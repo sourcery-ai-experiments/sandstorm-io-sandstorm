@@ -14,9 +14,9 @@ from collections import OrderedDict
 inter_add = False;
 
 def main():
-    if len(sys.argv) is 1:
+    if len(sys.argv) == 1:
         print('Usage: "python sync-langs.py en zh-TW". The first language has higher json order priority. If the first language is en, it can be omitted.')
-    elif len(sys.argv) is 2:
+    elif len(sys.argv) == 2:
         first = 'en'
         second = sys.argv[1]
     else:
